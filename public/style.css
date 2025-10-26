@@ -1,0 +1,28 @@
+:root{
+  --bg1:#071226;
+  --bg2:#0c2a3e;
+  --accent:#ff6b01;
+  --muted:#cfd8dc;
+}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#fff}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:rgba(0,0,0,0.25)}
+.brand{display:flex;gap:12px;align-items:center}
+.brand .logoImg{width:120px;height:auto;border-radius:8px;object-fit:contain}
+.brand h1{margin:0;font-size:20px}
+.subtitle{font-size:13px;color:var(--muted)}
+.admin-link{color:#fff;text-decoration:none;background:var(--accent);padding:8px 12px;border-radius:8px}
+
+.main{display:grid;grid-template-columns:1fr 320px;gap:16px;padding:18px}
+.score-card{background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+.teams{font-size:18px;font-weight:700;color:var(--muted)}
+.scoreline{font-size:48px;font-weight:800;margin-top:8px;color:var(--accent)}
+.info{margin-top:6px;color:#d0d7db}
+.card{background:rgba(255,255,255,0.03);padding:12px;border-radius:10px}
+.last-balls ul, .players ul{list-style:none;padding:0;margin:0}
+.last-balls li{padding:6px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.players li{padding:6px}
+.admin-main{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:18px}
+input,select,button{display:block;width:100%;padding:8px;margin:6px 0;border-radius:6px;border: none}
+input,select{background:rgba(255,255,255,0.06);color:#fff}
+button{background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+@media(max-width:900px){.main,.admin-main{grid-template-columns:1fr;}}

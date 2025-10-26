@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Ekta Cricket Club</title>
+  <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/public/assets/logo.png" class="logoImg" alt="Ekta Logo" />
+      <div>
+        <h1>Admin Panel</h1>
+        <div class="subtitle">Created by V R Rathod • Organised by D B Rathod</div>
+      </div>
+    </div>
+    <a class="admin-link" href="/public/index.html">Live Score</a>
+  </header>
+
+  <main class="admin-main">
+    <div class="card">
+      <h3>Add Player</h3>
+      <input id="pname" placeholder="Name" />
+      <input id="page" placeholder="Age" />
+      <input id="prole" placeholder="Role" />
+      <input id="pjersey" placeholder="Jersey No" />
+      <input id="apass" placeholder="Admin Password" value="1234" />
+      <button onclick="addPlayer()">Add Player</button>
+      <div id="addResp"></div>
+    </div>
+
+    <div class="card">
+      <h3>Create Match</h3>
+      <input id="teamA" placeholder="Team A name (Eg: Ekta Cricket Club)" value="Ekta Cricket Club" />
+      <input id="teamB" placeholder="Team B name" value="Opponent" />
+      <input id="venueM" placeholder="Venue" />
+      <input id="dateM" placeholder="Date" />
+      <input id="overs" placeholder="Overs (default 20)" value="20" />
+      <button onclick="createMatch()">Create Match</button>
+      <div id="matchResp"></div>
+    </div>
+
+    <div class="card">
+      <h3>Start Innings</h3>
+      <select id="batTeam"><option value="teamA">Team A (Bat)</option><option value="teamB">Team B (Bat)</option></select>
+      <input id="apass2" placeholder="Admin Password" value="1234" />
+      <button onclick="startInnings()">Start Innings</button>
+    </div>
+
+    <div class="card">
+      <h3>Add Ball (Ball-by-ball)</h3>
+      <input id="runs" placeholder="Runs (0-6)" />
+      <label><input type="checkbox" id="isWicket" /> Wicket</label>
+      <select id="extra">
+        <option value="">None</option>
+        <option value="wide">Wide</option>
+        <option value="no-ball">No-ball</option>
+      </select>
+      <input id="apass3" placeholder="Admin Password" value="1234" />
+      <button onclick="addBall()">Add Ball</button>
+      <div id="ballResp"></div>
+    </div>
+  </main>
+
+<script src="/public/script.js"></script>
+</body>
+</html>
