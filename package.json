@@ -1,0 +1,16 @@
+{
+  "name": "ekta-cricket-live-v3",
+  "version": "1.0.0",
+  "description": "Ekta Cricket Club - Live Score v3 (IPL dark theme)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "lowdb": "^7.0.1",
+    "cors": "^2.8.5",
+    "nanoid": "^4.0.0"
+  }
+}
